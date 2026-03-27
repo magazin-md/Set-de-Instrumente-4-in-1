@@ -52,7 +52,6 @@
       margin: 0 auto;
     }
 
-    /* ── TOPBAR ── */
     .topbar {
       background: var(--yellow);
       color: #111;
@@ -70,7 +69,6 @@
     }
     .topbar span { opacity: .45; margin: 0 6px; }
 
-    /* ── HERO ── */
     .hero-img-wrap { position: relative; overflow: hidden; }
     .hero-img-wrap img {
       width: 100%;
@@ -126,7 +124,6 @@
       line-height: 1.5; margin-bottom: 14px;
     }
 
-    /* checklist */
     .checks { list-style: none; display: grid; gap: 8px; }
     .checks li {
       display: flex; align-items: flex-start; gap: 10px;
@@ -139,7 +136,6 @@
       font-weight: 900; font-size: 11px; margin-top: 1px;
     }
 
-    /* price */
     .price-strip {
       display: flex; align-items: center;
       justify-content: space-between; gap: 10px;
@@ -163,7 +159,6 @@
       color: var(--success); text-align: center; flex-shrink: 0;
     }
 
-    /* buttons */
     .btn-main {
       display: block; width: 100%;
       background: linear-gradient(180deg, #ffe35a 0%, #ffd400 100%);
@@ -192,7 +187,6 @@
       text-align: center; margin-top: 8px;
     }
 
-    /* ── SECTION ── */
     .section { padding: 20px 14px 0; }
 
     .section-label {
@@ -216,7 +210,6 @@
       line-height: 1.5; margin-bottom: 14px;
     }
 
-    /* card */
     .card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -224,7 +217,6 @@
       overflow: hidden;
     }
 
-    /* problem cards */
     .prob-grid { display: grid; gap: 8px; }
     .prob-card {
       background: var(--card); border: 1px solid var(--line);
@@ -238,7 +230,6 @@
     }
     .prob-card p { font-size: 13px; color: var(--muted); line-height: 1.45; }
 
-    /* product cards */
     .product-card {
       background: var(--card); border: 1px solid var(--line);
       border-radius: 14px; overflow: hidden; margin-bottom: 10px;
@@ -270,7 +261,6 @@
       margin-top: 10px;
     }
 
-    /* benefits */
     .ben-grid { display: grid; gap: 8px; }
     .ben-card {
       background: var(--card); border: 1px solid var(--line);
@@ -285,7 +275,6 @@
     .ben-card h3 { font-family: var(--font-d); font-size: 16px; font-weight: 700; margin-bottom: 3px; }
     .ben-card p { font-size: 12px; color: var(--muted); line-height: 1.45; }
 
-    /* kit */
     .kit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .kit-card {
       background: var(--card); border: 1px solid var(--line);
@@ -294,7 +283,6 @@
     .kit-card h3 { font-family: var(--font-d); font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .kit-card p { font-size: 12px; color: var(--muted); line-height: 1.4; }
 
-    /* specs */
     .spec-grid { display: grid; gap: 8px; }
     .spec-card {
       background: var(--card); border: 1px solid var(--line);
@@ -305,7 +293,6 @@
     .spec-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--muted); }
     .spec-dot { flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--yellow); margin-top: 6px; }
 
-    /* reviews */
     .reviews-grid { display: grid; gap: 10px; }
     .review {
       background: var(--card); border: 1px solid var(--line);
@@ -316,7 +303,6 @@
     .review-author { font-family: var(--font-d); font-size: 13px; font-weight: 700; color: #fff; }
     .review-city { font-size: 12px; color: var(--muted); }
 
-    /* delivery band */
     .delivery-band {
       background: rgba(34,197,94,.08);
       border: 1px solid rgba(34,197,94,.2);
@@ -328,7 +314,6 @@
       color: var(--success); margin-bottom: 10px;
     }
 
-    /* form */
     .form-section { padding: 20px 14px 0; }
     .form-wrap {
       background: var(--card);
@@ -382,7 +367,6 @@
     }
     .trust-item strong { display: block; font-size: 18px; margin-bottom: 2px; }
 
-    /* order summary */
     .summary-box {
       background: rgba(255,212,0,0.06);
       border: 1px solid rgba(255,212,0,0.15);
@@ -402,14 +386,12 @@
     .summary-row span { color: var(--muted); }
     .summary-row b { font-weight: 700; }
 
-    /* footer */
     footer {
       padding: 24px 14px 16px; text-align: center;
       color: #444; font-size: 11px; line-height: 1.7;
     }
     footer strong { color: #666; }
 
-    /* sticky */
     .sticky {
       position: fixed; left:0; right:0; bottom:0; z-index:40;
       padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
@@ -429,7 +411,6 @@
       line-height:1; color:var(--yellow);
     }
 
-    /* fade-up */
     .fade-up { opacity:0; transform:translateY(20px); transition: opacity .5s ease, transform .5s ease; }
     .fade-up.visible { opacity:1; transform:none; }
 
@@ -446,7 +427,6 @@
 
   <div class="page">
 
-    <!-- HERO -->
     <section>
       <div class="hero-img-wrap">
         <div class="hero-badge">АКЦИЯ</div>
@@ -456,13 +436,13 @@
 
       <div class="hero-copy">
         <div class="eyebrow">Профессиональный комплект</div>
-        <h1>Это не просто набор.<br>Это полный контроль.</h1>
-        <p class="hero-sub">Перфоратор, дрель-шуруповерт, гайковерт и болгарка — в одном кейсе. Для дома, гаража и серьёзной работы.</p>
+        <h1>Надоело покупать инструменты по одному?<br>Этот набор решает всё сразу.</h1>
+        <p class="hero-sub">4 инструмента в одном кейсе. Без лишних затрат. Для дома и работы.</p>
 
         <ul class="checks" style="margin-bottom:14px;">
-          <li><span class="chk">✓</span><span>4 инструмента — без лишних покупок по отдельности.</span></li>
-          <li><span class="chk">✓</span><span>2 аккумулятора 21V Li-ion — работа без постоянных пауз.</span></li>
-          <li><span class="chk">✓</span><span>Бесщеточный двигатель — стабильная мощность и долгий срок службы.</span></li>
+          <li><span class="chk">✓</span><span>4 инструмента — закрывает все задачи сразу</span></li>
+          <li><span class="chk">✓</span><span>Работа без проводов — удобно и быстро</span></li>
+          <li><span class="chk">✓</span><span>Мощность для дома и серьёзной работы</span></li>
         </ul>
 
         <div class="price-strip">
@@ -474,12 +454,10 @@
         </div>
 
         <a href="#order-form" class="btn-main">ОФОРМИТЬ ЗАКАЗ</a>
-        <a href="#products" class="btn-outline">Посмотреть комплект ↓</a>
         <div class="small-note">Без предоплаты · Подтверждение по телефону</div>
       </div>
     </section>
 
-    <!-- PROBLEMS -->
     <section class="section fade-up">
       <div class="section-label">Знакомая ситуация?</div>
       <h2 class="section-title">Почему один набор лучше четырёх отдельных покупок</h2>
@@ -487,28 +465,27 @@
         <div class="prob-card">
           <div class="prob-icon">💸</div>
           <div>
-            <h3>Покупать всё отдельно — дорого</h3>
-            <p>Каждый инструмент по отдельности — сумма выходит намного выше, а нужного комплекта всё равно нет под рукой.</p>
+            <h3>Покупаешь снова и снова</h3>
+            <p>Берёшь инструменты по одному — и всё равно чего-то не хватает.</p>
           </div>
         </div>
         <div class="prob-card">
           <div class="prob-icon">⚡</div>
           <div>
-            <h3>Слабый инструмент подводит</h3>
-            <p>Дешёвые решения теряют мощность, быстро садятся и мешают закончить работу нормально.</p>
+            <h3>Не хватает мощности</h3>
+            <p>Слабые инструменты тормозят работу и тратят время.</p>
           </div>
         </div>
         <div class="prob-card">
           <div class="prob-icon">🔧</div>
           <div>
-            <h3>Постоянный хаос в работе</h3>
-            <p>То не хватает насадки, то нет нужной силы, то один есть — а второй ещё нужно искать и докупать.</p>
+            <h3>Постоянный хаос</h3>
+            <p>Каждый раз ищешь нужный инструмент или насадку.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCTS -->
     <section id="products" class="section fade-up">
       <div class="section-label">Что входит в набор</div>
       <h2 class="section-title">Каждый инструмент на своём месте</h2>
@@ -524,7 +501,6 @@
             <li><span class="chk">✓</span><span>До 30 мм в бетоне, 13 мм в стали</span></li>
             <li><span class="chk">✓</span><span>Патрон SDS-Plus, 3 режима работы</span></li>
           </ul>
-          <div class="quote">Сразу видно разницу между «игрушкой» и настоящим рабочим инструментом.</div>
         </div>
       </div>
 
@@ -539,7 +515,6 @@
             <li><span class="chk">✓</span><span>Диск до 125 мм</span></li>
             <li><span class="chk">✓</span><span>Двухпозиционная рукоятка</span></li>
           </ul>
-          <div class="quote">Быстро отрезать, подровнять или зачистить — закрывает задачу без лишних движений.</div>
         </div>
       </div>
 
@@ -554,7 +529,6 @@
             <li><span class="chk">✓</span><span>До 2800 об/мин</span></li>
             <li><span class="chk">✓</span><span>Точный контроль, удобная рукоятка</span></li>
           </ul>
-          <div class="quote">Нужен чаще всего — именно поэтому должен быть удобным и надёжным.</div>
         </div>
       </div>
 
@@ -568,12 +542,10 @@
             <li><span class="chk">✓</span><span>Крутящий момент — до 280 Нм</span></li>
             <li><span class="chk">✓</span><span>2 скорости, до 3500 об/мин</span></li>
           </ul>
-          <div class="quote">Там где нужна мощность без компромиссов — гайковерт показывает себя в полную силу.</div>
         </div>
       </div>
     </section>
 
-    <!-- BENEFITS -->
     <section class="section fade-up">
       <div class="section-label">Почему этот набор</div>
       <h2 class="section-title">Технология, которую видно в работе</h2>
@@ -582,34 +554,33 @@
           <div class="ben-icon">⚙️</div>
           <div>
             <h3>Бесщеточный двигатель</h3>
-            <p>До 20% меньше расход энергии, выше стабильность под нагрузкой и больший срок службы.</p>
+            <p>Стабильная работа под нагрузкой и долгий срок службы.</p>
           </div>
         </div>
         <div class="ben-card">
           <div class="ben-icon">🔋</div>
           <div>
             <h3>2 аккумулятора 21V Li-ion</h3>
-            <p>Один работает — второй заряжается. Не нужно останавливать работу на середине.</p>
+            <p>Один работает — второй заряжается. Без лишних пауз.</p>
           </div>
         </div>
         <div class="ben-card">
           <div class="ben-icon">🧱</div>
           <div>
-            <h3>Работа по разным материалам</h3>
-            <p>Металл, дерево, бетон, керамика — комплект не ограничивает вас одним сценарием.</p>
+            <h3>Для разных материалов</h3>
+            <p>Подходит для металла, дерева, бетона и других задач.</p>
           </div>
         </div>
         <div class="ben-card">
           <div class="ben-icon">🧰</div>
           <div>
             <h3>Прочный кейс в комплекте</h3>
-            <p>Удобное хранение и перевозка. Всё на своём месте — ничего не потеряется.</p>
+            <p>Всё на своём месте. Удобно хранить и перевозить.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KIT -->
     <section class="section fade-up">
       <div class="section-label">Полная комплектация</div>
       <h2 class="section-title">Что входит в кейс</h2>
@@ -639,7 +610,7 @@
           <p>100–240 В, быстрая зарядка</p>
         </div>
         <div class="kit-card">
-          <h3>🧰 Акссесуары</h3>
+          <h3>🧰 Аксессуары</h3>
           <p>Защитный кожух, ручка</p>
         </div>
         <div class="kit-card">
@@ -649,7 +620,6 @@
       </div>
     </section>
 
-    <!-- SPECS -->
     <section class="section fade-up">
       <div class="section-label">Технические данные</div>
       <h2 class="section-title">Характеристики</h2>
@@ -692,7 +662,6 @@
       </div>
     </section>
 
-    <!-- REVIEWS -->
     <section class="section fade-up">
       <div class="section-label">Покупатели о наборе</div>
       <h2 class="section-title">Что говорят клиенты</h2>
@@ -718,18 +687,15 @@
       </div>
     </section>
 
-    <!-- DELIVERY -->
     <div class="delivery-band fade-up">
       <h3>🚚 Бесплатная доставка по всей Молдове</h3>
       <ul class="checks">
         <li><span class="chk">✓</span><span>Доставка уже включена в цену — никаких доплат.</span></li>
         <li><span class="chk">✓</span><span>Оплата при получении — без риска и предоплаты.</span></li>
         <li><span class="chk">✓</span><span>Подтверждение заказа по телефону.</span></li>
-        <li><span class="chk">✓</span><span>Можно проверить товар до оплаты.</span></li>
       </ul>
     </div>
 
-    <!-- BOTTOM CTA -->
     <div class="section fade-up" style="padding-bottom: 0;">
       <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;margin-top:8px;">
         <div class="section-label" style="justify-content:center;">Сток ограничен</div>
@@ -740,7 +706,6 @@
       </div>
     </div>
 
-    <!-- ORDER FORM -->
     <section class="form-section" id="order-form">
       <div class="form-wrap">
         <div class="form-title">Оформить заказ.<br><em>Платите после.</em></div>
@@ -762,7 +727,6 @@
         </div>
       </div>
 
-      <!-- ORDER SUMMARY -->
       <div class="summary-box">
         <div class="summary-label">Ваш заказ</div>
         <div class="summary-row">
@@ -797,7 +761,6 @@
 
   </div>
 
-  <!-- STICKY -->
   <div class="sticky">
     <div class="sticky-inner">
       <div class="sticky-price">
@@ -812,7 +775,6 @@
     const TOKEN   = '8739588541:AAH52_thSm5D64bxP4kaCk4RETiDVTC7S4Q';
     const CHAT_ID = '8297678861';
 
-    // ── Validare ──
     function validatePhone(phone) {
       const cleaned = phone.replace(/[\s\-().]/g, '');
       const mdLocal = /^0[5-9]\d{7}$/;
@@ -824,7 +786,6 @@
       return name.length >= 2 && /^[\p{L}\s\-]+$/u.test(name);
     }
 
-    // ── Live feedback ──
     document.getElementById('clientPhone').addEventListener('input', function() {
       this.value = this.value.replace(/[^\d\s\+\-().]/g, '');
       this.classList.remove('error');
@@ -844,7 +805,6 @@
       }
     });
 
-    // ── Trimitere ──
     async function sendOrder() {
       const nameInput  = document.getElementById('clientName');
       const phoneInput = document.getElementById('clientPhone');
@@ -891,11 +851,11 @@
       note.textContent = 'Пожалуйста, подождите...';
 
       const text =
-        '🛒 *Новый заказ — Набор инструментов 4-в-1*\n\n' +
-        '👤 Имя: ' + name + '\n' +
-        '📞 Телефон: ' + phone + '\n\n' +
-        '💰 Сумма: 3299 лей\n' +
-        '🚚 Доставка: Бесплатно\n' +
+        '🛒 *Новый заказ — Набор инструментов 4-в-1*\\n\\n' +
+        '👤 Имя: ' + name + '\\n' +
+        '📞 Телефон: ' + phone + '\\n\\n' +
+        '💰 Сумма: 3299 лей\\n' +
+        '🚚 Доставка: Бесплатно\\n' +
         '📦 Перфоратор + Болгарка + Дрель + Гайковерт';
 
       try {
@@ -930,13 +890,11 @@
       }
     }
 
-    // ── Fade-up ──
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
-    // ── Fix: instantly show section when anchor link targets it ──
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', function() {
         const target = document.querySelector(this.getAttribute('href'));
