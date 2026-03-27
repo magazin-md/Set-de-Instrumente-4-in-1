@@ -742,7 +742,7 @@
 
     <!-- ORDER FORM -->
     <section class="form-section" id="order-form">
-      <div class="form-wrap fade-up">
+      <div class="form-wrap">
         <div class="form-title">Оформить заказ.<br><em>Платите после.</em></div>
         <p class="form-sub">Менеджер свяжется с вами для подтверждения. Без предоплаты, без риска.</p>
 
@@ -935,6 +935,17 @@
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+    // ── Fix: instantly show section when anchor link targets it ──
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function() {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+          target.classList.add('visible');
+        }
+      });
+    });
   </script>
 </body>
 </html>
