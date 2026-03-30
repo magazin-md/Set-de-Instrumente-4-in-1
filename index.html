@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Набор инструментов 4 в 1 — 3299 лей</title>
-  <meta name="description" content="Профессиональный набор инструментов 4 в 1: перфоратор, дрель-шуруповерт, гайковерт и угловая шлифмашина. 3299 лей. Бесплатная доставка." />
+  <meta name="description" content="Набор инструментов 4 в 1: перфоратор, дрель-шуруповерт, гайковерт и угловая шлифмашина. 3299 лей. Бесплатная доставка по Молдове. Осталось 2 набора." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
       overflow-x: hidden;
       width: 100%;
       max-width: 100vw;
-      padding-bottom: 90px;
+      padding-bottom: 92px;
       line-height: 1.5;
     }
 
@@ -72,14 +72,14 @@
     .hero-img-wrap { position: relative; overflow: hidden; }
     .hero-img-wrap img {
       width: 100%;
-      height: 280px;
+      height: 290px;
       object-fit: cover;
       object-position: center;
     }
     .hero-img-wrap::after {
       content: '';
       position: absolute; inset: 0;
-      background: linear-gradient(to bottom, rgba(15,17,21,.1) 0%, rgba(15,17,21,.6) 55%, #0f1115 100%);
+      background: linear-gradient(to bottom, rgba(15,17,21,.06) 0%, rgba(15,17,21,.55) 52%, #0f1115 100%);
     }
     .hero-badge {
       position: absolute; top: 12px; left: 12px; z-index: 2;
@@ -99,7 +99,7 @@
     .hero-copy {
       position: relative; z-index: 2;
       padding: 0 14px 20px;
-      margin-top: -60px;
+      margin-top: -64px;
     }
 
     .eyebrow {
@@ -113,8 +113,8 @@
 
     h1 {
       font-family: var(--font-d);
-      font-size: clamp(30px, 8vw, 46px);
-      font-weight: 900; line-height: 1.0;
+      font-size: clamp(29px, 8vw, 46px);
+      font-weight: 900; line-height: 0.98;
       letter-spacing: -.01em;
       margin-bottom: 10px;
     }
@@ -143,7 +143,7 @@
       border: 1px solid var(--line);
       border-left: 4px solid var(--yellow);
       border-radius: 10px; padding: 12px 14px;
-      margin: 14px 0;
+      margin: 14px 0 10px;
     }
     .price-main {
       font-family: var(--font-d);
@@ -159,6 +159,29 @@
       color: var(--success); text-align: center; flex-shrink: 0;
     }
 
+    .price-justify {
+      background: rgba(255,212,0,0.06);
+      border: 1px solid rgba(255,212,0,0.16);
+      border-radius: 10px;
+      padding: 11px 12px;
+      font-size: 13px;
+      color: #f8f4d3;
+      margin-bottom: 10px;
+      line-height: 1.45;
+    }
+
+    .urgency-box {
+      background: rgba(229,57,53,.10);
+      border: 1px solid rgba(229,57,53,.26);
+      border-radius: 10px;
+      padding: 11px 12px;
+      margin: 0 0 12px;
+      font-size: 13px;
+      line-height: 1.45;
+      color: #ffd5d4;
+    }
+    .urgency-box strong { color: #fff; }
+
     .btn-main {
       display: block; width: 100%;
       background: linear-gradient(180deg, #ffe35a 0%, #ffd400 100%);
@@ -173,18 +196,17 @@
     .btn-main:active { transform: scale(.98); }
     .btn-main:disabled { opacity: .7; cursor: not-allowed; }
 
-    .btn-outline {
-      display: block; width: 100%;
-      background: transparent; color: var(--text);
-      border: 1px solid var(--line); border-radius: 10px;
-      padding: 13px; font-family: var(--font-d);
-      font-size: 16px; font-weight: 700;
-      text-align: center; cursor: pointer; margin-top: 8px;
-    }
-
     .small-note {
       font-size: 12px; color: var(--muted);
       text-align: center; margin-top: 8px;
+    }
+
+    .trust-hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 12px;
     }
 
     .section { padding: 20px 14px 0; }
@@ -210,25 +232,32 @@
       line-height: 1.5; margin-bottom: 14px;
     }
 
-    .card {
+    .prob-grid, .ben-grid, .spec-grid, .reviews-grid { display: grid; gap: 8px; }
+
+    .prob-card, .ben-card, .spec-card, .review, .kit-card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 14px;
-      overflow: hidden;
+      border-radius: 12px;
     }
 
-    .prob-grid { display: grid; gap: 8px; }
-    .prob-card {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 12px; padding: 14px;
+    .prob-card, .ben-card {
+      padding: 14px;
       display: flex; align-items: flex-start; gap: 10px;
     }
     .prob-icon { font-size: 22px; flex-shrink: 0; }
-    .prob-card h3 {
+    .prob-card h3, .ben-card h3 {
       font-family: var(--font-d); font-size: 16px;
       font-weight: 700; margin-bottom: 4px;
     }
-    .prob-card p { font-size: 13px; color: var(--muted); line-height: 1.45; }
+    .prob-card p, .ben-card p {
+      font-size: 13px; color: var(--muted); line-height: 1.45;
+    }
+
+    .ben-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: rgba(255,212,0,0.1); border-radius: 8px;
+      display: grid; place-items: center; font-size: 18px;
+    }
 
     .product-card {
       background: var(--card); border: 1px solid var(--line);
@@ -252,52 +281,19 @@
       font-weight: 900; margin-bottom: 8px; line-height: 1.1;
     }
     .product-body p { font-size: 13px; color: var(--muted); line-height: 1.45; margin-bottom: 10px; }
-    .quote {
-      padding: 10px 12px;
-      border-left: 3px solid var(--yellow);
-      background: rgba(255,255,255,0.04);
-      border-radius: 0 8px 8px 0;
-      font-size: 13px; font-weight: 700; color: #fff;
-      margin-top: 10px;
-    }
-
-    .ben-grid { display: grid; gap: 8px; }
-    .ben-card {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 12px; padding: 14px;
-      display: flex; align-items: flex-start; gap: 10px;
-    }
-    .ben-icon {
-      width: 36px; height: 36px; flex-shrink: 0;
-      background: rgba(255,212,0,0.1); border-radius: 8px;
-      display: grid; place-items: center; font-size: 18px;
-    }
-    .ben-card h3 { font-family: var(--font-d); font-size: 16px; font-weight: 700; margin-bottom: 3px; }
-    .ben-card p { font-size: 12px; color: var(--muted); line-height: 1.45; }
 
     .kit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .kit-card {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 10px; padding: 12px;
-    }
+    .kit-card { padding: 12px; }
     .kit-card h3 { font-family: var(--font-d); font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .kit-card p { font-size: 12px; color: var(--muted); line-height: 1.4; }
 
-    .spec-grid { display: grid; gap: 8px; }
-    .spec-card {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 12px; padding: 14px;
-    }
+    .spec-card { padding: 14px; }
     .spec-card h3 { font-family: var(--font-d); font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--yellow); }
     .spec-list { list-style: none; display: grid; gap: 6px; }
     .spec-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--muted); }
     .spec-dot { flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--yellow); margin-top: 6px; }
 
-    .reviews-grid { display: grid; gap: 10px; }
-    .review {
-      background: var(--card); border: 1px solid var(--line);
-      border-radius: 12px; padding: 14px;
-    }
+    .review { padding: 14px; }
     .stars { color: var(--yellow); font-size: 15px; letter-spacing: 2px; margin-bottom: 8px; }
     .review p { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 8px; }
     .review-author { font-family: var(--font-d); font-size: 13px; font-weight: 700; color: #fff; }
@@ -312,6 +308,16 @@
     .delivery-band h3 {
       font-family: var(--font-d); font-size: 20px; font-weight: 900;
       color: var(--success); margin-bottom: 10px;
+    }
+
+    .cta-band {
+      margin: 20px 14px 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--yellow);
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
     }
 
     .form-section { padding: 20px 14px 0; }
@@ -379,12 +385,13 @@
     }
     .summary-row {
       display: flex; justify-content: space-between; align-items: center;
+      gap: 12px;
       padding: 9px 0; border-bottom: 1px solid var(--line);
       font-size: 14px;
     }
     .summary-row:last-child { border-bottom: none; }
     .summary-row span { color: var(--muted); }
-    .summary-row b { font-weight: 700; }
+    .summary-row b { font-weight: 700; text-align: right; }
 
     footer {
       padding: 24px 14px 16px; text-align: center;
@@ -416,33 +423,35 @@
 
     @media (max-width: 360px) {
       .kit-grid { grid-template-columns: 1fr; }
+      .price-strip { align-items: flex-start; }
+      .free-delivery { padding: 7px 9px; font-size: 12px; }
     }
   </style>
 </head>
 <body>
 
   <div class="topbar">
-    🔥 Набор 4-в-1 <span>|</span> Бесплатная доставка по Молдове <span>|</span> Оплата при получении
+    🔥 Осталось 2 набора <span>|</span> Бесплатная доставка по Молдове <span>|</span> Оплата при получении
   </div>
 
   <div class="page">
 
     <section>
       <div class="hero-img-wrap">
-        <div class="hero-badge">АКЦИЯ</div>
+        <div class="hero-badge">Осталось 2 шт.</div>
         <div class="hero-badge-kit">4 В 1</div>
         <img src="./img/hero.png" alt="Набор инструментов 4 в 1" />
       </div>
 
       <div class="hero-copy">
-        <div class="eyebrow">Профессиональный комплект</div>
-        <h1>Надоело покупать инструменты по одному?<br>Этот набор решает всё сразу.</h1>
-        <p class="hero-sub">4 инструмента в одном кейсе. Без лишних затрат. Для дома и работы.</p>
+        <div class="eyebrow">Комплект для дома, гаража и дачи</div>
+        <h1>В каждом доме есть что ремонтировать…<br>но не у каждого есть свой набор инструментов</h1>
+        <p class="hero-sub">Каждый раз, когда вы вызываете мастера для мелкого ремонта — вы теряете деньги и время. С этим набором многие задачи можно решить самому, сразу и без лишних затрат.</p>
 
         <ul class="checks" style="margin-bottom:14px;">
-          <li><span class="chk">✓</span><span>4 инструмента — закрывает все задачи сразу</span></li>
-          <li><span class="chk">✓</span><span>Работа без проводов — удобно и быстро</span></li>
-          <li><span class="chk">✓</span><span>Мощность для дома и серьёзной работы</span></li>
+          <li><span class="chk">✓</span><span>4 инструмента в одном кейсе — не нужно покупать всё по отдельности</span></li>
+          <li><span class="chk">✓</span><span>Подходит для дома, гаража, участка и повседневных работ</span></li>
+          <li><span class="chk">✓</span><span>Удобно хранить, перевозить и сразу брать в работу</span></li>
         </ul>
 
         <div class="price-strip">
@@ -453,34 +462,94 @@
           <div class="free-delivery">🚚 Доставка<br>БЕСПЛАТНО</div>
         </div>
 
-        <a href="#order-form" class="btn-main">ОФОРМИТЬ ЗАКАЗ</a>
-        <div class="small-note">Без предоплаты · Подтверждение по телефону</div>
+        <div class="price-justify">💸 Один вызов мастера стоит денег каждый раз. Здесь вы один раз берёте комплект — и многие задачи закрываете сами.</div>
+        <div class="urgency-box"><strong>⚠️ В наличии осталось только 2 набора.</strong> Заказы подтверждаются по телефону — кто первый подтвердил, тот и получает.</div>
+
+        <a href="#order-form" class="btn-main">ОСТАВИТЬ ЗАЯВКУ</a>
+        <div class="small-note">Мы перезвоним для подтверждения заказа</div>
+
+        <div class="trust-hero">
+          <ul class="checks">
+            <li><span class="chk">✓</span><span>Мы подтверждаем каждый заказ лично по телефону</span></li>
+            <li><span class="chk">✓</span><span>Проверяем товар перед отправкой</span></li>
+            <li><span class="chk">✓</span><span>Вы оплачиваете только при получении</span></li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="section fade-up">
-      <div class="section-label">Знакомая ситуация?</div>
-      <h2 class="section-title">Почему один набор лучше четырёх отдельных покупок</h2>
+      <div class="section-label">Почему люди откладывают покупку</div>
+      <h2 class="section-title">А потом всё равно переплачивают</h2>
       <div class="prob-grid">
         <div class="prob-card">
           <div class="prob-icon">💸</div>
           <div>
-            <h3>Покупаешь снова и снова</h3>
-            <p>Берёшь инструменты по одному — и всё равно чего-то не хватает.</p>
+            <h3>Покупают инструменты по одному</h3>
+            <p>Сначала берут что-то одно, потом ещё одно — и в итоге тратят больше, чем на готовый комплект.</p>
           </div>
         </div>
         <div class="prob-card">
-          <div class="prob-icon">⚡</div>
+          <div class="prob-icon">⏱</div>
           <div>
-            <h3>Не хватает мощности</h3>
-            <p>Слабые инструменты тормозят работу и тратят время.</p>
+            <h3>Теряют время на мелких ремонтах</h3>
+            <p>Пока ищешь нужный инструмент, просишь у знакомых или ждёшь мастера — проблема остаётся нерешённой.</p>
           </div>
         </div>
         <div class="prob-card">
           <div class="prob-icon">🔧</div>
           <div>
-            <h3>Постоянный хаос</h3>
-            <p>Каждый раз ищешь нужный инструмент или насадку.</p>
+            <h3>Дома всегда чего-то не хватает</h3>
+            <p>Когда нужно срочно закрутить, просверлить или отрезать — нужного инструмента под рукой просто нет.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-up">
+      <div class="section-label">Главные преимущества</div>
+      <h2 class="section-title">Почему этот набор реально удобен</h2>
+      <div class="ben-grid">
+        <div class="ben-card">
+          <div class="ben-icon">🔧</div>
+          <div>
+            <h3>Не зависите ни от кого</h3>
+            <p>Многие мелкие поломки и задачи можно закрывать сразу, без ожиданий и лишних звонков.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">💸</div>
+          <div>
+            <h3>Экономите реальные деньги</h3>
+            <p>Один комплект вместо нескольких отдельных покупок и постоянных расходов на простые работы.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">⚡</div>
+          <div>
+            <h3>Под рукой для большинства задач</h3>
+            <p>Сверлить, закручивать, резать, затягивать — всё собрано в одном наборе.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">🧰</div>
+          <div>
+            <h3>Порядок и контроль</h3>
+            <p>Прочный кейс помогает хранить всё в одном месте и быстро брать в работу именно то, что нужно.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">🏠</div>
+          <div>
+            <h3>Для дома, гаража и дачи</h3>
+            <p>Подходит и для повседневных ремонтов, и для более серьёзных хозяйственных задач.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">🔥</div>
+          <div>
+            <h3>Выручает, когда нужно срочно</h3>
+            <p>Когда что-то сломалось или нужно сделать быстро — комплект уже у вас, а не у кого-то другого.</p>
           </div>
         </div>
       </div>
@@ -488,7 +557,8 @@
 
     <section id="products" class="section fade-up">
       <div class="section-label">Что входит в набор</div>
-      <h2 class="section-title">Каждый инструмент на своём месте</h2>
+      <h2 class="section-title">4 инструмента — каждый для своей задачи</h2>
+      <p class="section-sub">Сначала человек должен понять, зачем ему набор. Потом — что именно он получает за свои деньги. Здесь показываем это максимально понятно.</p>
 
       <div class="product-card">
         <img src="./img/PERFORATOR.png" alt="Перфоратор">
@@ -537,7 +607,7 @@
         <div class="product-body">
           <div class="product-tag">Ударный гайковерт</div>
           <h3>Реальная сила для серьёзной затяжки</h3>
-          <p>Крепёж, колёса, сложные соединения — там где шуруповерта уже мало.</p>
+          <p>Крепёж, колёса, сложные соединения — там, где обычного шуруповерта уже мало.</p>
           <ul class="checks">
             <li><span class="chk">✓</span><span>Крутящий момент — до 280 Нм</span></li>
             <li><span class="chk">✓</span><span>2 скорости, до 3500 об/мин</span></li>
@@ -547,43 +617,8 @@
     </section>
 
     <section class="section fade-up">
-      <div class="section-label">Почему этот набор</div>
-      <h2 class="section-title">Технология, которую видно в работе</h2>
-      <div class="ben-grid">
-        <div class="ben-card">
-          <div class="ben-icon">⚙️</div>
-          <div>
-            <h3>Бесщеточный двигатель</h3>
-            <p>Стабильная работа под нагрузкой и долгий срок службы.</p>
-          </div>
-        </div>
-        <div class="ben-card">
-          <div class="ben-icon">🔋</div>
-          <div>
-            <h3>2 аккумулятора 21V Li-ion</h3>
-            <p>Один работает — второй заряжается. Без лишних пауз.</p>
-          </div>
-        </div>
-        <div class="ben-card">
-          <div class="ben-icon">🧱</div>
-          <div>
-            <h3>Для разных материалов</h3>
-            <p>Подходит для металла, дерева, бетона и других задач.</p>
-          </div>
-        </div>
-        <div class="ben-card">
-          <div class="ben-icon">🧰</div>
-          <div>
-            <h3>Прочный кейс в комплекте</h3>
-            <p>Всё на своём месте. Удобно хранить и перевозить.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section fade-up">
-      <div class="section-label">Полная комплектация</div>
-      <h2 class="section-title">Что входит в кейс</h2>
+      <div class="section-label">Комплект целиком</div>
+      <h2 class="section-title">Что вы получаете в кейсе</h2>
       <div class="kit-grid">
         <div class="kit-card">
           <h3>🔩 Перфоратор</h3>
@@ -621,6 +656,41 @@
     </section>
 
     <section class="section fade-up">
+      <div class="section-label">Почему этот набор</div>
+      <h2 class="section-title">Технология, которую видно в работе</h2>
+      <div class="ben-grid">
+        <div class="ben-card">
+          <div class="ben-icon">⚙️</div>
+          <div>
+            <h3>Бесщеточный двигатель</h3>
+            <p>Стабильная работа под нагрузкой и долгий срок службы.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">🔋</div>
+          <div>
+            <h3>2 аккумулятора 21V Li-ion</h3>
+            <p>Один работает — второй заряжается. Без лишних пауз.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">🧱</div>
+          <div>
+            <h3>Для разных материалов</h3>
+            <p>Подходит для металла, дерева, бетона и других хозяйственных задач.</p>
+          </div>
+        </div>
+        <div class="ben-card">
+          <div class="ben-icon">🧰</div>
+          <div>
+            <h3>Прочный кейс в комплекте</h3>
+            <p>Всё на своём месте. Удобно хранить дома, в гараже и брать с собой.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-up">
       <div class="section-label">Технические данные</div>
       <h2 class="section-title">Характеристики</h2>
       <div class="spec-grid">
@@ -630,7 +700,7 @@
             <li><span class="spec-dot"></span>Обороты: 0–1200 / 0–4000 об/мин</li>
             <li><span class="spec-dot"></span>Сила удара: 2 Дж</li>
             <li><span class="spec-dot"></span>Бетон: до 30 мм</li>
-            <li><span class="spec-dot"></span>Сталь: до 13 мм, Дерево: до 26 мм</li>
+            <li><span class="spec-dot"></span>Сталь: до 13 мм, дерево: до 26 мм</li>
             <li><span class="spec-dot"></span>Патрон: SDS-Plus</li>
           </ul>
         </div>
@@ -680,7 +750,7 @@
         </div>
         <div class="review">
           <div class="stars">★★★★★</div>
-          <p>Заказ пришёл быстро, всё аккуратно упаковано. Брал мужу — остался очень доволен. Хороший вариант и для подарка, и для работы.</p>
+          <p>Заказ пришёл быстро, всё аккуратно упаковано. Брал мужу — остался очень доволен. Хороший вариант и для подарка, и для хозяйства.</p>
           <div class="review-author">Андрей П.</div>
           <div class="review-city">Комрат</div>
         </div>
@@ -692,32 +762,38 @@
       <ul class="checks">
         <li><span class="chk">✓</span><span>Доставка уже включена в цену — никаких доплат.</span></li>
         <li><span class="chk">✓</span><span>Оплата при получении — без риска и предоплаты.</span></li>
-        <li><span class="chk">✓</span><span>Подтверждение заказа по телефону.</span></li>
+        <li><span class="chk">✓</span><span>Каждый заказ подтверждается по телефону.</span></li>
       </ul>
     </div>
 
-    <div class="section fade-up" style="padding-bottom: 0;">
-      <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;margin-top:8px;">
-        <div class="section-label" style="justify-content:center;">Сток ограничен</div>
-        <h2 class="section-title">3299 лей · Бесплатная доставка</h2>
-        <p class="section-sub">Заявки обрабатываются в порядке поступления. Количество ограничено.</p>
-        <a href="#order-form" class="btn-main">ОФОРМИТЬ ЗАКАЗ</a>
-        <div class="small-note" style="margin-top:8px;">Без предоплаты · Оплата при получении</div>
-      </div>
+    <div class="cta-band fade-up">
+      <div class="section-label" style="justify-content:center;">Финальное решение</div>
+      <h2 class="section-title">3299 лей · Бесплатная доставка</h2>
+      <p class="section-sub">В наличии осталось 2 набора. Если хотите забрать по этой цене — оставляйте заявку сейчас.</p>
+      <a href="#order-form" class="btn-main">ОФОРМИТЬ ЗАКАЗ</a>
+      <div class="small-note" style="margin-top:8px;">Без предоплаты · Оплата при получении</div>
     </div>
 
     <section class="form-section" id="order-form">
       <div class="form-wrap">
-        <div class="form-title">Оформить заказ.<br><em>Платите после.</em></div>
-        <p class="form-sub">Менеджер свяжется с вами для подтверждения. Без предоплаты, без риска.</p>
+        <div class="form-title">Оставьте заявку.<br><em>Мы перезвоним.</em></div>
+        <p class="form-sub">Заполните имя и номер. Менеджер свяжется с вами для подтверждения заказа. Без предоплаты, без риска.</p>
 
         <input class="input" id="clientName" type="text" placeholder="Ваше имя" autocomplete="name">
         <input class="input" id="clientPhone" type="tel" placeholder="Телефон: 069 123 456" autocomplete="tel">
-        <button class="btn-main" id="sendBtn" type="button" onclick="sendOrder()">📞 ОТПРАВИТЬ ЗАКАЗ</button>
-        <div class="form-note" id="formNote">После заявки менеджер свяжется для подтверждения заказа.</div>
+        <button class="btn-main" id="sendBtn" type="button" onclick="sendOrder()">📞 ОТПРАВИТЬ ЗАЯВКУ</button>
+        <div class="form-note" id="formNote">После заявки менеджер свяжется с вами для подтверждения заказа.</div>
 
         <div class="success-box" id="successBox">
           ✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.
+        </div>
+
+        <div class="trust-hero" style="margin-top:12px;">
+          <ul class="checks">
+            <li><span class="chk">✓</span><span>Мы подтверждаем каждый заказ лично по телефону</span></li>
+            <li><span class="chk">✓</span><span>Проверяем товар перед отправкой</span></li>
+            <li><span class="chk">✓</span><span>Вы оплачиваете только при получении</span></li>
+          </ul>
         </div>
 
         <div class="trust-row">
@@ -767,7 +843,7 @@
         <small>Цена комплекта</small>
         <strong>3299 лей</strong>
       </div>
-      <a href="#order-form" class="btn-main" style="flex:1;font-size:clamp(13px,3.8vw,17px);padding:13px 10px;">Заказать сейчас →</a>
+      <a href="#order-form" class="btn-main" style="flex:1;font-size:clamp(13px,3.8vw,17px);padding:13px 10px;">Оставить заявку →</a>
     </div>
   </div>
 
@@ -851,11 +927,12 @@
       note.textContent = 'Пожалуйста, подождите...';
 
       const text =
-        '🛒 *Новый заказ — Набор инструментов 4-в-1*\\n\\n' +
-        '👤 Имя: ' + name + '\\n' +
-        '📞 Телефон: ' + phone + '\\n\\n' +
-        '💰 Сумма: 3299 лей\\n' +
-        '🚚 Доставка: Бесплатно\\n' +
+        '🛒 *Новый заказ — Набор инструментов 4-в-1*\n\n' +
+        '👤 Имя: ' + name + '\n' +
+        '📞 Телефон: ' + phone + '\n\n' +
+        '💰 Сумма: 3299 лей\n' +
+        '🚚 Доставка: Бесплатно\n' +
+        '⚠️ Остаток на лендинге: 2 набора\n' +
         '📦 Перфоратор + Болгарка + Дрель + Гайковерт';
 
       try {
@@ -884,7 +961,7 @@
         }
       } catch(e) {
         btn.disabled = false;
-        btn.textContent = '📞 ОТПРАВИТЬ ЗАКАЗ';
+        btn.textContent = '📞 ОТПРАВИТЬ ЗАЯВКУ';
         note.style.color = '#e53935';
         note.textContent = '❌ Ошибка. Попробуйте ещё раз или позвоните нам.';
       }
